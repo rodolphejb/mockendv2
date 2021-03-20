@@ -1,0 +1,54 @@
+{
+  "User": {
+    "id": "int",
+    "name": "string",
+    "username": "string",
+    "email": "string",
+    "address": {
+      "street": "string",
+      "suite": "string",
+      "city": "string",
+      "zipcode": "string",
+      "geo": {
+        "lat": "int",
+        "lng": "int"
+      }
+    },
+    "phone": "string",
+    "website": "string",
+    "company": {
+      "name": "string",
+      "catchPhrase": "string",
+      "bs": "string"
+    }
+},
+  "Post": {
+    "userId": "User",
+    "id": "int",
+    "title": "string",
+    "body": "string",
+    "views": "int",
+    "published": "boolean",
+    "createdAt": "date",
+    "comments": "Comment[]"
+  },
+  "Comment": {
+    "postId": "Post",
+    "id": "int",
+    "name": "string",
+    "email": "string",
+    "body": "string"
+  },
+  "Album": {
+    "userId": "User",
+    "id": "int",
+    "title": "string"
+  },
+  "Photo": {
+    "albumId": "Album",
+    "id": "int",
+    "title": "string",
+    "url": "string",
+    "thumbnailUrl": "string"
+  }
+}
