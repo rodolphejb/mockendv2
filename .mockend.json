@@ -5,8 +5,12 @@
     "username": "string",
     "email": "string",
     "phone": "string",
-    "website": "string"
-},
+    "website": "string",
+    "company": "Company" 
+  },
+  "Company": {
+    "name": "string"
+  },
   "Post": {
     "userId": "User",
     "id": "int",
